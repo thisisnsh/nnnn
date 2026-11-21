@@ -1,0 +1,7 @@
+# Core
+torch
+numpy
+
+# Jupyter
+notebook
+ipykernel
