@@ -11,4 +11,4 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Then open a notebook (e.g. `01-perceptron.ipynb`) in the browser tab that opens.
+Then open a notebook (e.g. `02-perceptron.ipynb`) in the browser tab that opens.
