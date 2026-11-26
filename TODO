@@ -1,8 +1,24 @@
-- bigram
-- rnn
-- bow
-- transformer
+# Language models
+- 08 bow: each position averages all earlier positions (causal mask)
+- 09 self-attention: learned weighted average (q/k/v), positional embeddings
+- 10 transformer: multi-head, feed-forward, residual, layernorm, stacked blocks
+- 11 bpe: tokenizer (train merges, encode, decode)
+- 12 gpt: transformer on bpe tokens, scaled up, temperature / top-k sampling
 
-----
-- bpe
-- gpt
+# Mixture of experts (on top of 12)
+- 13 moe: several feed-forward experts + softmax router (every expert used)
+- 14 topk moe: route each token to top-k experts + load-balancing loss
+- 15 shared moe: always-on shared experts + routed experts
+- 16 upcycling: start an moe from a trained dense gpt's feed-forward weights
+- 17 multi-token prediction: extra heads predicting t+2, t+3 (works on dense or moe)
+
+# Generative models (images, independent of the above)
+- 18 vae: encoder -> latent -> decoder, reparameterisation, kl loss
+- 19 gan: generator vs discriminator
+
+# Reinforcement learning
+- 20 rl: policy gradient (reinforce) on a small toy environment
+- 21 sft: fine-tune gpt on prompt -> answer pairs
+- 22 rl gpt: policy gradient on gpt with a checkable reward (grpo style)
+- 23 thinking gpt: reward correct final answers, let it learn to reason first
+- 24 rl moe: rl on the moe model, routing stability
