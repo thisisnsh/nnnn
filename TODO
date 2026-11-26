@@ -1,9 +1,10 @@
-# Better rnns (extends 07)
-- 08 lstm: gates + separate cell state so memory survives longer
-- 09 gru: lstm simplified to two gates, compare against 07 and 08
+# Sequence models
+- 07 bow: each position averages all earlier positions (causal mask)
+- 08 rnn: hidden state carried one step at a time
+- 09 lstm: gates + separate cell state so memory survives longer
+- 10 gru: lstm simplified to two gates, compare against 08 and 09
 
 # Language models
-- 10 bow: each position averages all earlier positions (causal mask)
 - 11 self-attention: learned weighted average (q/k/v), positional embeddings
 - 12 transformer: multi-head, feed-forward, residual, layernorm, stacked blocks
 - 13 bpe: tokenizer (train merges, encode, decode)
