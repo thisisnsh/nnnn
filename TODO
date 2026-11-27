@@ -3,8 +3,6 @@
 - 09 gru: lstm simplified to two gates, compare against 07 and 08
 
 # Language models
-- 12 transformer: multi-head, feed-forward, residual, layernorm, stacked blocks
-- 13 bpe: tokenizer (train merges, encode, decode)
 - 14 gpt: transformer on bpe tokens, scaled up, temperature / top-k sampling
 
 # Encoders (on top of 14)
