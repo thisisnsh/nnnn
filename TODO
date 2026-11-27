@@ -1,11 +1,8 @@
 # Sequence models
-- 07 rnn: hidden state carried one step at a time
 - 08 lstm: gates + separate cell state so memory survives longer
 - 09 gru: lstm simplified to two gates, compare against 07 and 08
-- 10 bow: each position averages all earlier positions (causal mask)
 
 # Language models
-- 11 self-attention: learned weighted average (q/k/v), positional embeddings
 - 12 transformer: multi-head, feed-forward, residual, layernorm, stacked blocks
 - 13 bpe: tokenizer (train merges, encode, decode)
 - 14 gpt: transformer on bpe tokens, scaled up, temperature / top-k sampling
