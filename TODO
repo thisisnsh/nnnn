@@ -1,6 +1,3 @@
-# Sequence models
-- 09 gru: lstm simplified to two gates, compare against 07 and 08
-
 # Language models
 - 14 gpt: transformer on bpe tokens, scaled up, temperature / top-k sampling
 
