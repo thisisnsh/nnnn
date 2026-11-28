@@ -1,5 +1,4 @@
 # Sequence models
-- 08 lstm: gates + separate cell state so memory survives longer
 - 09 gru: lstm simplified to two gates, compare against 07 and 08
 
 # Language models
